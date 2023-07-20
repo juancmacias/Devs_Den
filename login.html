@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job details - Dev's Den</title>
+    <link rel="stylesheet" href="./styles/loginstyles.css">
+    <link rel="stylesheet" href="./styles/stylelanding.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext");
+      </style>
+
+        <script
+        src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo-navbar" href="index.html"><img src="./images/devsDen.png" alt="logo" id="logo"></a>
+        <input type="checkbox" id="check">  
+        <label for="check" class="menu-view">
+        &#8801
+        </label>
+        <nav class="menu">
+            <a href="#1">INICIO</a>
+            <a href="#3">ALERTAS</a>
+            <a href="#">FAVORITOS </a>
+            <a href="https://factoriaf5.org/" id="download">LOGIN</a>
+            <a href="https://factoriaf5.org/" id="download">LOG OUT</a>
+            <label for="check" class="menu-hide">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-form">
+            <ul class="container-tabs">
+                <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+                <li class="tab tab-primera"><a href="#checkin">Registrarse</a></li>
+            </ul>
+            <div class="container-tab">
+                <div id="Login">
+                    <h1>Iniciar Sesión</h1>
+                    <form action="#" method="post">
+                        <div class="container-input">
+
+                            <input type="text" required placeholder="Name">
+                        </div>
+    
+                        <div class="container-input">
+
+                            <input type="password" required placeholder="Password">
+                        </div>
+                        <p class="forgot"><a href="#">¿Olvidó la contraseña?</a></p>
+                        <input type="submit" class="button button-block" value="Iniciar Sesión">
+                    </form>
+                </div>
+                <div id="checkin">
+                    <h1>Registrarse</h1>
+                    <form action="#" method="post">
+                        <div class="fila-arriba">
+                            <div class="container-input">
+                                <label>
+                                    Nombre <span class="req">*</span>
+                                </label>
+                                <input type="text" required>
+                            </div>
+    
+                            <div class="container-input">
+                                <label>
+                                    Apellido <span class="req">*</span>
+                                </label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="container-input">
+                            <label>
+                                Usuario <span class="req">*</span>
+                            </label>
+                            <input type="text" required>
+                        </div>
+                        <div class="container-input">
+
+                            <input type="email" required>
+                        </div>
+                        <div class="container-input">
+
+                            <input type="password" required>
+                        </div>
+    
+                        <div class="container-input">
+                            <label>
+                                Repetir Contraseña <span class="req">*</span>
+                            </label>
+                            <input type="password" required>
+                        </div>
+    
+                        <input type="submit" class="button button-block" value="Registrarse">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="icons-footer">
+                <div class="cell8">
+                    <div class="footer1"><h5 class="footer_titles">About Dev´s Den</h5></div>
+                    <div class="description"><h5 class="footer_text">Dev´s Den is a landing page HTML template where you create, develop and impulse your career</h5></div>
+                </div>
+                <div class="cell8">
+                    <div class="footer1"><h5 class="footer_titles">Contact Info</h5></div>
+                    <div class="footer_list">    
+                        <ul class="list4">
+                            <li>22 Innovation Street, CA, US</li>
+                        </ul>
+                        <ul class="list5">   
+                            <li>office@syncmobile.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell8">
+                    <div class="footer1"><h5 class="footer_titles">Value Links</h5></div>
+                    <div class="description"><h5 class="footer_text">Terms & Conditions<br>Privacy Policy</h5></div>
+                </div>
+                <div class="cell8">
+                    <div class="footer1"><h5 class="footer_titles">Other Apps</h5></div>
+                    <div class="description"><h5 class="footer_text">Social Interaction</h5></div>
+                </div>
+                <div class="cell5">
+                    <img src="./images/facebook.png" alt="" id="icon5">
+                    <img src="./images/Twiter.png" alt="" id="icon5">
+                    <img src="./images/Pinterest.png" alt="" id="icon5">
+                    <img src="./images/instagram.png" alt="" id="icon5">
+                </div>
+            </div>
+            <div class="copy">
+                <h5 class="footer_text2">Copyright <img src="images/copyright.png" alt=""> 2023 Dev´s Den - All rights reserved </h5>
+            </div>
+    </footer>
+</header>
+<script src="login.js"></script>
+</body>
+</html>
