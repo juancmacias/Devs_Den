@@ -56,7 +56,7 @@ At the user level, the use of the "Dev's Den" web page would be simple and intui
 
 
 # *To initialize the project* <img width = 50px, height = 50px src="https://github.com/juancmacias/Devs_Den/assets/132446932/02e7caf1-c651-4bd8-8f40-75f2ea21432e">
-backend
+  You must run:
 - Composer install
 - Xampp installed and initialized
 - To update entities run the command php bin/console doctrine:schema:update --force
