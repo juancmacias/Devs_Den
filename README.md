@@ -58,12 +58,12 @@ You will see the build errors and lint warnings in the console.<br>
 <br>
 # *Authors of the project* <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/6a12045d-faf6-47a2-8ab1-9b40e99d660c">
 This project exists thanks to all the people who contribute:<br>
-  - Juan Carlos Macías -- https://github.com/anaencinasd<br>
-  - Francisco Manuel Nieto -- https://github.com/MaiteNavas<br>
-  - Gabriela Guzman -- https://github.com/Ninetthe<br>
+  - Juan Carlos Macías -- https://github.com/juancmacias<br>
+  - Francisco Manuel Nieto -- <br>
+  - Gabriela Guzman -- https://github.com/Gabsgt99<br>
   - Sara Poyo -- https://github.com/Sara-Poyo-Pastor<br>
   - Sidi -- <br>
   - Bryan -- <br>
-  - Victor -- <br>
+  - Victor Tejedor -- https://github.com/victorteje<br>
   - Pascual --
   
