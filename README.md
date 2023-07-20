@@ -17,7 +17,7 @@ Our motto is: "Develop, learn and succeed in Dev's Den", emphasizing the profess
 
 An example of how our landing page looks like can be found in the following image:
 <p align="center">
-<img width = 100%, height = 100% src= ""></p>
+<img width = 100%, height = 100% src= "https://github.com/juancmacias/Devs_Den/assets/132446932/6a76ddc2-3a1b-4b6b-beac-40a65261d184"></p>
 <br>
 
 # *Functionalities* <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/cd1cfd60-fde6-423f-a2b0-638571ee0b00">
