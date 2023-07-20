@@ -97,8 +97,9 @@ This project exists thanks to all the people who contribute:<br>
   - Francisco Manuel Nieto -- <br>
   - Gabriela Guzman -- https://github.com/Gabsgt99<br>
   - Sara Poyo -- https://github.com/Sara-Poyo-Pastor<br>
-  - Hafdala Mehdi Sidi -- <br>
+  - Hafdala Mehdi Sidi -- https://github.com/hafdalamehdisidi<br>
   - Bryan -- <br>
   - Victor Tejedor -- https://github.com/victorteje<br>
   - Pascual --
+  - Eva --
   
