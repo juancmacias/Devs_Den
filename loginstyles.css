@@ -50,7 +50,7 @@
      display: block;
      text-decoration: none;
      padding: 15px;
-     background: #04B2D9;
+     background: #011C40;
      color: #FFFFFF;
      font-size: 20px;
      float: left;
@@ -67,7 +67,7 @@
  }
 
  .contenedor-tabs .active a {
-     background: #4586f5;
+     background: #9FB0BF;
      color: #FFFFFF;
      border-radius: 10px;
  }

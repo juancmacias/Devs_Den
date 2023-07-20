@@ -37,5 +37,7 @@ $(document).ready(function () {
         $(".contenido-tab > div").not(target).hide();
 
         $(target).fadeIn(10);
+
     });
+
 });
