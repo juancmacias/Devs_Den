@@ -2,17 +2,17 @@ const getData = async(id) => {
 	let response = await fetch(`http://127.0.0.1:8000/ofer/jobpositions`);
     let data = await response.json();
 	console.log(data);
-	printPokemon(data);
+	printCards(data);
 }
 
-const printPokemon = (data) => {
-	const poke_container = document.getElementById('poke-container');
+const printCards = (data) => {
+	const cards_container = document.getElementById('cards-container');
 	let card = document.createElement("div");
 	let cardInfo = '';
 	for (let i = 0; i < data.length; i++) {
 		
-			card.classList.add("pokemon");
-			poke_container.appendChild(card);
+			card.classList.add("card-complete");
+			cards_container.appendChild(card);
 			
 			cardInfo +=
 				`<div class="img-container">
