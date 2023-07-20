@@ -56,33 +56,11 @@ At the user level, the use of the "Dev's Den" web page would be simple and intui
 
 
 # *To initialize the project* <img width = 50px, height = 50px src="https://github.com/juancmacias/Devs_Den/assets/132446932/02e7caf1-c651-4bd8-8f40-75f2ea21432e">
-
-
-1.  Install J son server
-
-- npm install -g json-server
-
-
-2.  Open the j son in the localhost (you have two options):
-
--  json-server --watch db.json 
-
-Or
-
--  npx json-server -p 3000 -w db.json
-
-#### Open the project:
-
- In the project directory, you can run:
-
-**`npm start`**
-
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
+backend
+- Composer install
+- Xampp installed and initialized
+- To update entities run the command php bin/console doctrine:schema:update --force
+- Lift server: sinfony server:start
 
 # *Technologies used*  <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/2b95686d-c3b6-4531-8d2b-949f40e82941">
 
