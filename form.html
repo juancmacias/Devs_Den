@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h1>REGISTRO</h1>
+        <label for="tipo_de_usuario"
+          >Tipo de Usuario
+          <select name="tipo_de_usuario" id="tipo_de_usuario" required>
+            <option value="opcion1">opcion1</option>
+            <option value="opcion2">opcion2</option>
+            <option value="opcion3">opcion3</option>
+            <option value="opcion4">opcion4</option>
+          </select>
+        </label>
+        <label for="usuario"
+          >Usuario
+          <input
+            type="email"
+            id="usuario"
+            placeholder="@example.com"
+            autocomplete="email"
+            required
+          />
+        </label>
+        <label for="contraseña"
+          >Contraseña
+          <input
+            type="password"
+            id="contraseña"
+            placeholder="Your password"
+            autocomplete=""
+            required
+          />
+        </label>
+        <label for="confirma_tu_contraseña"
+          >Confirma tu contraseña
+          <input
+            type="password"
+            id="confirma_tu_contraseña"
+            placeholder="Your password"
+            autocomplete=""
+            required
+          />
+        </label>
+        <label for="boton">
+          <input class="boton" type="submit" id="boton" value="Resgistrarse" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>

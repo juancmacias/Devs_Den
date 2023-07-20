@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 2.5rem;
+}
+
+form h1 {
+    font-size: 3rem;
+}
+
+input {
+    height: 3.7rem;
+    width: 24rem;
+    text-align: center;
+    background-color: #959090;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+select{
+    height: 3.7rem;
+    width: 24rem;
+    text-align: center;
+    background-color: #959090;
+    border: none;
+    font-size: 2rem;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 2rem;
+}
+
+.boton {
+    height: 3.6rem;
+    width: 11.2rem;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 1.5rem;
+}
+
