@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="loginstyles.css">
-
-    <title>Formulario Login y Registro de Usuarios</title>
+    <title>Login|Registro</title>
 </head>
+
 <body>
-    <div class="container-form">
-        <ul class="container-tabs">
+    <div class="contenedor-formularios">
+        <ul class="contenedor-tabs">
             <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
-            <li class="tab tab-primera"><a href="#checkin">Registrarse</a></li>
+            <li class="tab tab-primera"><a href="#registrarse">Registrarse</a></li>
         </ul>
-        <div class="container-tab">
-            <div id="Login">
+
+        <div class="contenido-tab">
+            <div id="iniciar-sesion">
                 <h1>Iniciar Sesión</h1>
                 <form action="#" method="post">
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Usuario <span class="req">*</span>
                         </label>
                         <input type="text" required>
                     </div>
 
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Contraseña <span class="req">*</span>
                         </label>
                         <input type="password" required>
                     </div>
-                    <p class="forgot"><a href="#">¿Olvidó la contraseña?</a></p>
+                    <p class="forgot"><a href="#">¿olvidó la contraseña?</a></p>
                     <input type="submit" class="button button-block" value="Iniciar Sesión">
                 </form>
             </div>
-            <div id="checkin">
+            <div id="registrarse">
                 <h1>Registrarse</h1>
                 <form action="#" method="post">
                     <div class="fila-arriba">
-                        <div class="container-input">
+                        <div class="contenedor-input">
                             <label>
                                 Nombre <span class="req">*</span>
                             </label>
                             <input type="text" required>
                         </div>
 
-                        <div class="container-input">
+                        <div class="contenedor-input">
                             <label>
                                 Apellido <span class="req">*</span>
                             </label>
                             <input type="text" required>
                         </div>
                     </div>
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Usuario <span class="req">*</span>
                         </label>
                         <input type="text" required>
                     </div>
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Email <span class="req">*</span>
                         </label>
                         <input type="email" required>
                     </div>
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Contraseña <span class="req">*</span>
                         </label>
                         <input type="password" required>
                     </div>
 
-                    <div class="container-input">
+                    <div class="contenedor-input">
                         <label>
                             Repetir Contraseña <span class="req">*</span>
                         </label>
@@ -86,6 +84,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="login.js"></script>
 
 </body>
