@@ -78,6 +78,6 @@ This project exists thanks to all the people who contribute:<br>
   - Hafdala Mehdi Sidi -- https://github.com/hafdalamehdisidi<br>
   - Bryan -- <br>
   - Victor Tejedor -- https://github.com/victorteje<br>
-  - Pascual --
+  - Pascual -- <br>
   - Eva --
   
