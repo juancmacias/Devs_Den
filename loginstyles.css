@@ -89,7 +89,7 @@
      left: 13px;
      color: #4586f5;
      transition: all 0.25s ease;
-     -webkit-backface-visibility: hidden;
+     -webkit-border-before-style: hidden;
      pointer-events: none;
      font-size: 22px;
  }
@@ -167,7 +167,7 @@
      background: #4586f5;
      color: #FFFFFF;
      transition: all .5s ease;
-     -webkit-appearance: none;
+     -webkit-user-drag: none;
      border-radius: 10px;
  }
 
