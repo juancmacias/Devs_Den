@@ -60,7 +60,7 @@ At the user level, the use of the "Dev's Den" web page would be simple and intui
 - Composer install
 - Xampp installed and initialized
 - To update entities run the command php bin/console doctrine:schema:update --force
-- Lift server: sinfony server:start
+- Lift server: symfony server:start
 
 # *Technologies used*  <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/2b95686d-c3b6-4531-8d2b-949f40e82941">
 
