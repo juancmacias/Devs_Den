@@ -23,14 +23,15 @@ main {
     border-radius: 16px;
     margin-top: 2vh;
 }
+.detailCard{
 
-.img-container {
-    margin: auto;
+    text-align: center;
 }
 
-a, h3, p {
+
+.info a, .info h3, .info p {
     text-align: center;
-    padding: 0 2vh;
+    padding: 0.5vh 2vw;
 }
 
 .website {

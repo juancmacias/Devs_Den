@@ -1,10 +1,7 @@
 const getData = async() => {
 	let params = new URLSearchParams(location.search);
 	var id = params.get('id');
-     //Se realiza la división de la URL
-     //var split = actual.split("/");
-     //Se obtiene el ultimo valor de la URL
-     //var id = split[split.length-1];
+
      console.log(id);
 	let response = await fetch(`http://127.0.0.1:8000/ofer/${id}`);
     let data = await response.json();
@@ -21,20 +18,17 @@ const printJobDetail = (data) => {
 			card.classList.add("detailCard");
 			jobDetail.appendChild(card);
 			
-			cardInfo +=
-				`<div class="img-container">
-					<img src="http://127.0.0.1:8000/${data.image}" alt=${data.companyName}>
-				</div>
+			cardInfo =
+				`<img class="jobImage" src="http://127.0.0.1:8000/${data.image}" alt=${data.companyName}>
 				<div class="info">
-					<a href="detail.html?id=${data[i].id}" title="${data[i].positionTitle}" target="_top">
-						<span class="positionTitle">${data[i].positionTitle}</span>
-					</a>
-					<h3 class="companyName">${data[i].companyName}</h3>
-                    <p class="companyDescription">${data[i].description}</p>
-                    <p class="positionDescription">${data[i].positionDescription}</p>
-                    <p class="requirements">${data[i].requirements}</p>
-                    <p class="salary">${data[i].salary}</p>
-					<small class="employmentMode">Modalidad: ${data[i].employmentMode}<span></span></small>
+					<h3 class="positionTitle">${data.positionTitle}</h3>
+					<h3 class="companyName">${data.companyName}</h3>
+					<a href="${data.website}" class="companyName">${data.website}</a>
+                    <p class="companyDescription">${data.description}</p>
+                    <p class="positionDescription">${data.positionDescription}</p>
+                    <p class="requirements">${data.requirements}</p>
+                    <p class="salary">${data.salary}</p>
+					<p class="employmentMode">Modalidad: ${data.employmentMode}<p>
 				</div>`;
 		console.log("id "+ data.id);
 
