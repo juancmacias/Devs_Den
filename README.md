@@ -54,6 +54,36 @@ At the user level, the use of the "Dev's Den" web page would be simple and intui
 - Users will have the ability to add ads that interest them to their favorites list so they can access them later from their personalized control panel.
 - They will also be able to set up alerts to receive notifications when there are new ads that match their search criteria.
 
+
+# *To initialize the project* <img width = 50px, height = 50px src="https://github.com/juancmacias/Devs_Den/assets/132446932/02e7caf1-c651-4bd8-8f40-75f2ea21432e">
+
+
+1.  Install J son server
+
+- npm install -g json-server
+
+
+2.  Open the j son in the localhost (you have two options):
+
+-  json-server --watch db.json 
+
+Or
+
+-  npx json-server -p 3000 -w db.json
+
+#### Open the project:
+
+ In the project directory, you can run:
+
+**`npm start`**
+
+Runs the app in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
 # *Technologies used*  <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/2b95686d-c3b6-4531-8d2b-949f40e82941">
 
 <img width = 70px, height = 70px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/22852c80-126f-48ba-b936-11fc13f88e89"> <img width = 70px, height = 70px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/e10e887d-8201-47b9-b3a5-6b6d935c46f3"> <img width = 70px, height = 70px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/5a6d57b3-16d4-4ee8-8109-d632269201c3"> <img width = 70px, height = 70px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/040624dc-3b70-45c6-bad1-369515d17750"> <img width = 70px, height = 70px src="https://github.com/juancmacias/Devs_Den/assets/132446932/f101b6fb-6eb6-4b14-8195-01a7744ad4e1"> <img width = 70px, height = 70px src="https://github.com/juancmacias/Devs_Den/assets/132446932/f9a543bb-470a-4785-81af-219a9a414693">
