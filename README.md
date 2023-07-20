@@ -37,17 +37,22 @@ Functionalities for "Dev's Den" users:
     Custom notification settings to receive alerts when there are new ads that match the user's search criteria.<br>
     
 # *How users can use it* <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/267ff4c9-035a-4a54-8f0f-f708271c3538">
-In order to visualize this project properly you need react and axios installed.<br>
-You can run the project with:<br>
-  
-    npm start
-  
-To display it in the browser, open your local host:<br>
-  
-    http://localhost:5173
+At the user level, the use of the "Dev's Den" web page would be simple and intuitive. Below, I describe the process step by step:<br>
 
-The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.<br>
+**Registration or Login:**<br>
+- New users must register on the site by providing some basic information, such as name, email and password.
+- Users who are already registered can access the platform using their email address and password.<br>
+
+**Ad Exploration:**<br>
+- Once inside the platform, users will be able to access the list of available ads. Here they will see both job offers posted by companies and profiles of developers looking for jobs.
+- Users can use the advanced search function to filter ads according to their preferences, such as location, type of contract, skills required, among others. They will also be able to perform free text searches by entering keywords related to the job they are looking for.<br>
+
+**Viewing Details:**<br>
+- Clicking on a specific ad will display the full details of the ad. If it is an employer ad, you will see the company information, job description, requirements, salary and employment modality.<br>
+
+**Favorites Ads and Alerts Management:**<br>
+- Users will have the ability to add ads that interest them to their favorites list so they can access them later from their personalized control panel.
+- They will also be able to set up alerts to receive notifications when there are new ads that match their search criteria.
 
 # *Technologies used*  <img width = 50px, height = 50px src="https://github.com/nati-Bel/Proyecto-3---Music-App/assets/132446932/2b95686d-c3b6-4531-8d2b-949f40e82941">
 
