@@ -26,15 +26,15 @@ const printJobDetail = (data) => {
 					<img src="http://127.0.0.1:8000/${data.image}" alt=${data.companyName}>
 				</div>
 				<div class="info">
-					
-						<span class="positionTitle">${data.positionTitle}</span>
-
-					<h3 class="companyName">${data.companyName}</h3>
-                    <p class="companyDescription">${data.description}</p>
-                    <p class="positionDescription">${data.positionDescription}</p>
-                    <p class="requirements">${data.requirements}</p>
-                    <p class="salary">${data.salary}</p>
-					<small class="employmentMode">Modalidad: ${data.employmentMode}<span></span></small>
+					<a href="detail.html?id=${data[i].id}" title="${data[i].positionTitle}" target="_top">
+						<span class="positionTitle">${data[i].positionTitle}</span>
+					</a>
+					<h3 class="companyName">${data[i].companyName}</h3>
+                    <p class="companyDescription">${data[i].description}</p>
+                    <p class="positionDescription">${data[i].positionDescription}</p>
+                    <p class="requirements">${data[i].requirements}</p>
+                    <p class="salary">${data[i].salary}</p>
+					<small class="employmentMode">Modalidad: ${data[i].employmentMode}<span></span></small>
 				</div>`;
 		console.log("id "+ data.id);
 
