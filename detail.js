@@ -16,13 +16,14 @@ const printJobDetail = (data) => {
 			
 			cardInfo +=
 				`<div class="img-container">
-					<img src="http://127.0.0.1:8000/${data[i].image}" alt=${data[i].companyName}>
+					<img class="jobImage" src="http://127.0.0.1:8000/${data[i].image}" alt=${data[i].companyName}>
 				</div>
 				<div class="info">
 					<a href="detail.html?id=${data[i].id}" title="${data[i].positionTitle}" target="_top">
 						<span class="positionTitle">${data[i].positionTitle}</span>
 					</a>
 					<h3 class="companyName">${data[i].companyName}</h3>
+                    <p class="website">${data[i].website}</p>
                     <p class="companyDescription">${data[i].description}</p>
                     <p class="positionDescription">${data[i].positionDescription}</p>
                     <p class="requirements">${data[i].requirements}</p>
