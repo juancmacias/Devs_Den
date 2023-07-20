@@ -6,33 +6,38 @@ const getData = async(id) => {
 }
 
 const printCards = (data) => {
-	const cards_container = document.getElementById('cards-container');
-	let card = document.createElement("div");
+	//const cards_container = document.getElementById('cards-container');
+	//let card = document.createElement("div");
 	let cardInfo = '';
 	for (let i = 0; i < data.length; i++) {
 		
-			card.classList.add("card-complete");
-			cards_container.appendChild(card);
+			//card.classList.add("card-complete");
+			//cards_container.appendChild(card);
 			
 			cardInfo +=
-				`<div class="buscar">
-					<div class="img-container">
-						<img src="http://127.0.0.1:8000/${data[i].image}" alt=${data[i].companyName}>
-					</div>
-					<div class="info">
-						<a href="detail.html?id=${data[i].id}" title="${data[i].positionTitle}" target="_top">
-							<span class="number">${data[i].positionTitle}</span>
-						</a>
-						<h3 class="name">${data[i].companyName}</h3>
-						<small class="type">Modalidad: ${data[i].employmentMode}<span></span></small>
-					</div>
-				</div>`;
+				`
+				<div class="card-complete">
+
+                    <div class="img-container">
+					<img src="http://127.0.0.1:8000/${data[i].image}" alt=${data[i].companyName}>
+                    </div>
+                    <div class="info">
+					<a href="detail.html?id=${data[i].id}" title="${data[i].positionTitle}" target="_top">
+                            <h3 class="job-title">${data[i].positionTitle}</h3>
+                        </a>
+                        <h3 class="name">${data[i].companyName}</h3>
+                        <small class="type">Modalidad: <br> ${data[i].employmentMode}<span></span></small>
+                    </div>
+                </div>
+				`;
+
+
 		console.log("id "+ data[i].id);
 	  }
 	
 	
 	
-	card.innerHTML = cardInfo;
+	  document.getElementById('cards-container').innerHTML = cardInfo;
 
 }
 
@@ -41,7 +46,7 @@ getData(6);
 function myFunction() {
 	var input = document.getElementById("Search");
 	var filter = input.value.toLowerCase();
-	var nodes = document.getElementsByClassName('buscar');
+	var nodes = document.getElementsByClassName('card-complete');
   
 	for (i = 0; i < nodes.length; i++) {
 
