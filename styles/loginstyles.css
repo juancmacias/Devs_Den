@@ -19,6 +19,8 @@
      text-decoration: none;
      color: #4586f5;
      transition: .5s ease;
+     display: flex;
+     justify-content: space-between;
  }
 
  a:hover {
@@ -42,23 +44,27 @@
 
  .contenedor-tabs:after {
      content: "";
-     display: table;
+     display: flex;
      clear: both;
+     justify-content: center;
+     align-items: center;
+     align-items: center;
  }
 
  .contenedor-tabs li a {
-     display: block;
-     text-decoration: none;
-     padding: 15px;
-     background: #011C40;
-     color: #FFFFFF;
-     font-size: 20px;
      float: left;
-     width: 50%;
+     text-decoration: none;
+     padding: 8px;
+     background: #FFFFFF;
+     color: #4586f5;
+     font-size: 20px;
+     width: 30%;
      text-align: center;
      cursor: pointer;
      transition: .5s ease;
      border-radius: 10px;
+     border: 1px solid #4586f5;
+     margin-left: 60px;
  }
 
  .contenedor-tabs li a:hover {
@@ -67,22 +73,16 @@
  }
 
  .contenedor-tabs .active a {
-     background: #9FB0BF;
-     color: #FFFFFF;
-     border-radius: 10px;
- }
+     background: #FFFFFF;
+     color: #4586f5;
+    border-radius: 10px;
+    border: 1px solid #4586f5;
+    text-align: center;
 
+ }
  .contenido-tab>div:last-child {
      display: none;
  }
-
- h1 {
-     text-align: center;
-     color: #4586f5;
-     font-weight: 300;
-     margin: 0 0 40px;
- }
-
  label {
      position: absolute;
      transform: translateY(6px);
@@ -162,8 +162,8 @@
      outline: none;
      border-radius: 5px;
      cursor: pointer;
-     padding: 15px 0;
-     font-size: 2rem;
+     height: 30%;
+     font-size: 1rem;
      background: #4586f5;
      color: #FFFFFF;
      transition: all .5s ease;
@@ -177,8 +177,10 @@
  }
 
  .button-block {
-     display: block;
-     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
  }
 
  .forgot {
