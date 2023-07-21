@@ -24,8 +24,6 @@ class ChecktokenController extends AbstractController
     public function checktoken(Request $request, UserRepository $userRepository): Response
     {
 
-        //$em = $this->getDoctrine()->getManager();
-
         if($request->query->get('bearer')) {
             $token = $request->query->get('bearer');
         }else {
@@ -37,15 +35,8 @@ class ChecktokenController extends AbstractController
         $tokenPayload = base64_decode($tokenParts[1]);
         $jwtHeader = json_decode($tokenHeader);
         $jwtPayload = json_decode($tokenPayload);
-
-        //dump($jwtPayload);die;
-    
+   
         $user = $userRepository->findOneByEmail($jwtPayload->username);
-        
-        //dump($user);die;
-        //$userRepository->remove($user);
-
-        //dump($user->getRoles());die;
         if(!$user) {
             return $this->redirectToRoute('app_login');
         }

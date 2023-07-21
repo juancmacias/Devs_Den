@@ -13,17 +13,11 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class AlertaController extends AbstractController
 {
-
     #[Route('/alerta/{id}', name: 'app_alerta', methods:'GET')]
     public function alerta(SerializerInterface $serializer, int $id): Response
     {
         $entityManager = $this->getDoctrine()->getManager();
-        // recuperar solo el primer registro
         $Ofertas = $entityManager->getRepository(Alerta::class)->findByallField($id);
-        //dump("Listado  para los");die;
-        // recuperar todos los registros
-        //$DatosPersonales = $entityManager->getRepository(DatosPersonales::class)->findAll();
-
         $json = $serializer->serialize($Ofertas, 'json');
         return new Response($json, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
@@ -43,12 +37,7 @@ class AlertaController extends AbstractController
 
         if(isset($jwtPayload->username)){
             $user = $userRepository->findOneByEmail($jwtPayload->username);
-            //dump($user);die;
-            //$userRepository->remove($user);
-            //dump($user->getRoles()[0]);die;
             if($user->getRoles()[0] === 'USUARIO'){
-                // todo bien
-                //dump($user->getRoles()[0]);die;
                 $r = $this->getDoctrine()->getManager();
 
                 
@@ -58,17 +47,13 @@ class AlertaController extends AbstractController
                 $alerta->setIdUsuario($id);
                 $alerta->setAlerta($request->query->get('alerta'));
                 $alerta->setEstado('0');
-
-                //dump($user->getRoles()[0]);die;
                 $json = $serializer->serialize(["estado:insertado"], 'json');
                 $em->persist($alerta);
                 $em->flush();
             }else{
-                // todo mal
                 $json = $serializer->serialize(['error:error'], 'json');
             }
         }else{
-            //dump("Error en la carga de username");die;
             $json = $serializer->serialize(['error:error'], 'json');
         }
         return new Response($json, Response::HTTP_OK, ['Content-Type' => 'application/json']);
