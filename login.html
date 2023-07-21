@@ -35,7 +35,7 @@
     <main>
         <div class="container-form">
             <ul class="container-tabs">
-                <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+                <li class="tab tab-segunda active"><a href="#Login">Iniciar Sesión</a></li>
                 <li class="tab tab-primera"><a href="#checkin">Registrarse</a></li>
             </ul>
             <div class="container-tab">
@@ -43,13 +43,11 @@
                     <h1>Iniciar Sesión</h1>
                     <form action="#" method="post">
                         <div class="container-input">
-
-                            <input type="text" required placeholder="Name">
+                            <input name="mail"  type="email" required placeholder="Name">
                         </div>
     
                         <div class="container-input">
-
-                            <input type="password" required placeholder="Password">
+                            <input name="password" type="password" required placeholder="Password">
                         </div>
                         <p class="forgot"><a href="#">¿Olvidó la contraseña?</a></p>
                         <input type="submit" class="button button-block" value="Iniciar Sesión">
@@ -58,48 +56,24 @@
                 <div id="checkin">
                     <h1>Registrarse</h1>
                     <form action="#" method="post">
-                        <div class="fila-arriba">
-                            <div class="container-input">
-                                <label>
-                                    Nombre <span class="req">*</span>
-                                </label>
-                                <input type="text" required>
-                            </div>
-    
-                            <div class="container-input">
-                                <label>
-                                    Apellido <span class="req">*</span>
-                                </label>
-                                <input type="text" required>
-                            </div>
-                        </div>
                         <div class="container-input">
-                            <label>
-                                Usuario <span class="req">*</span>
-                            </label>
-                            <input type="text" required>
+                            <input name="email" type="email" required placeholder="Email">
                         </div>
-                        <div class="container-input">
 
-                            <input type="email" required>
-                        </div>
                         <div class="container-input">
+                            <input name="password" type="password" required placeholder="Password">
+                        </div>
+    
+                        <div class="container-input">
+                            <input name="password2" type="password" required placeholder="Insert password">
+                        </div>
 
-                            <input type="password" required>
-                        </div>
-    
-                        <div class="container-input">
-                            <label>
-                                Repetir Contraseña <span class="req">*</span>
-                            </label>
-                            <input type="password" required>
-                        </div>
-    
                         <input type="submit" class="button button-block" value="Registrarse">
                     </form>
                 </div>
             </div>
         </div>
+
 
 
     </main>

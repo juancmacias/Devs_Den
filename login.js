@@ -37,9 +37,10 @@ $(document).ready(function () {
 
         target = $(this).attr("href");
 
-        $(".contenido-tab > div").not(target).hide();
-
-        $(target).fadeIn(600);
+        $("#Login").hide();
+        $("#checkin").hide();
+        console.log("Click "+ target)
+        $(target).show();
 
     });
 

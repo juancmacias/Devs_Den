@@ -6,14 +6,9 @@ const getData = async(id) => {
 }
 
 const printCards = (data) => {
-	//const cards_container = document.getElementById('cards-container');
-	//let card = document.createElement("div");
+
 	let cardInfo = '';
-	for (let i = 0; i < data.length; i++) {
-		
-			//card.classList.add("card-complete");
-			//cards_container.appendChild(card);
-			
+	for (let i = 0; i < data.length; i++) {			
 			cardInfo +=
 				`
 				<div class="card-complete">
@@ -30,15 +25,9 @@ const printCards = (data) => {
                     </div>
                 </div>
 				`;
-
-
 		console.log("id "+ data[i].id);
 	  }
-	
-	
-	
 	  document.getElementById('cards-container').innerHTML = cardInfo;
-
 }
 
 getData(6);
@@ -49,13 +38,12 @@ function myFunction() {
 	var nodes = document.getElementsByClassName('card-complete');
   
 	for (i = 0; i < nodes.length; i++) {
-
 	  if (nodes[i].innerText.toLowerCase().includes(filter)) {
-		nodes[i].style.display = "block";
-		
+		nodes[i].style.display = "flex";
+		document.getElementsByClassName('bannerContainer')[0].style.height = "450px"
 	  } else {
 		nodes[i].style.display = "none";
-		console.log("node "+ nodes[i])
+
 	  }
 	}
   }

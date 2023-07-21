@@ -28,7 +28,12 @@ main {
     text-align: center;
 }
 
-
+.status img{
+    height: 23px;
+}
+.status img:hover{
+    cursor: pointer;
+}
 .info a, .info h3, .info p {
     text-align: center;
     padding: 0.5vh 2vw;
