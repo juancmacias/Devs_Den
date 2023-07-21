@@ -64,7 +64,7 @@
      transition: .5s ease;
      border-radius: 10px;
      border: 1px solid #4586f5;
-     margin-left: 60px;
+     
  }
 
  .contenedor-tabs li a:hover {
@@ -73,8 +73,8 @@
  }
 
  .contenedor-tabs .active a {
-     background: #FFFFFF;
-     color: #4586f5;
+    background: #FFFFFF;
+    color: #4586f5;
     border-radius: 10px;
     border: 1px solid #4586f5;
     text-align: center;
@@ -180,7 +180,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 30%;
+     width: 100%;
  }
 
  .forgot {
@@ -195,12 +195,12 @@
      }
 
      .fila-arriba div:last-child {
-         margin-bottom: 40px;
+         margin-bottom: 100%;
      }
  }
 
  @media screen and (max-width: 400px) {
      .contenedor-tabs li a {
-         width: 100%;
+         width: 50%;
      }
  }
