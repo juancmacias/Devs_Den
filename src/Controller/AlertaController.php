@@ -13,6 +13,7 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class AlertaController extends AbstractController
 {
+    // list alert of user
     #[Route('/alerta/{id}', name: 'app_alerta', methods:'GET')]
     public function alerta(SerializerInterface $serializer, int $id): Response
     {
@@ -21,6 +22,7 @@ class AlertaController extends AbstractController
         $json = $serializer->serialize($Ofertas, 'json');
         return new Response($json, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
+    // insert alert of user - security
     #[Route('/alerta/new/{id}', name: 'app_alerta_new', methods:'GET')]
     public function new(Request $request, SerializerInterface $serializer, UserRepository $userRepository, EntityManagerInterface $em, int $id): Response
     {
